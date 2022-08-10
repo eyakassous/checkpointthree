@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
+import "./App.css";
+import Head from "./Compnents/CustomNavbar.js";
+import Slider from "./Compnents/CustomSlider.js";
+import Formular from "./Compnents/CustomForm.js";
+import Footer from "./Compnents/CustomFooter";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    <Head/>
+    <br/>
+   <Slider/>
+   <Formular/>
+   <br/><hr/>
+   <Footer/>
+   <br/> 
+   </div>
   );
 }
+
 
 export default App;
